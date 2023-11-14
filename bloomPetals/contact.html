@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Accueil</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <header class="header">
+            <nav class="nav-bar">
+                <img src="images/pinpng.com-white-png-1017862 - copie.png" height="50" width="50">
+                <ul class="other">
+                    <li id="home"><a href="index.html">Home</a></li>
+                    <li id="entreprise"><a href="entreprise.html">Entreprise</a></li>
+                    <li id="realisation"><a href="realisation.html">Réalisation</a></li>
+                    <li id="contact"><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div class="contact-form">
+                <h2>Contactez-nous</h2>
+                <form action="destination_script.php" method="post">
+                    <label for="civ-select">Civilité</label>
+                    <select name="civ" id="civ-select">
+                        <option value="sexe">Sexe</option>
+                        <option value="homme">Homme</option>
+                        <option value="femme">Femme</option>
+                    </select>
+                  <label for="name">Nom</label>
+                  <input type="text" id="name" name="name" required>
+                  <label for="postal">Code Postal</label>
+                  <input type="text" id="postal" name="postal" required>
+                  <label for="subject">Sujet</label>
+                  <input type="text" id="subject" name="subject">
+                  <label for="message">Message (facultatif)</label>
+                  <textarea id="message" name="message" rows="5" required></textarea>
+                  <div>
+                    <input type="checkbox" id="politique" name="politique">
+                    <label id="id-politique" for="politique">validation des politiques de confidentialité de
+                        l’entreprise.</label>
+                  </div>
+                  <br>
+                  <button type="submit">Envoyer</button>
+                </form>
+              </div>
+              <br>
+        </main>
+    </body>
+</html>
